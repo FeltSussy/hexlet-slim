@@ -1,0 +1,14 @@
+<h1>Новый пользователь</h1>
+<form action="<?= $usersPostUrl ?>" method="post">
+    <div>
+    <label>
+        Имя
+        <input type="text" name="user[nickname]" value="<?= htmlspecialchars($user['nickname']) ?>">
+    </label>
+    <label>
+        Емаил
+        <input type="text" name="user[email]" value="<?= htmlspecialchars($user['email']) ?>">
+    </label>
+    </div>
+    <input type="submit" value="Submit">
+</form>

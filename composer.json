@@ -17,6 +17,7 @@
         "slim/http": "^1.4",
         "slim/php-view": "^3.4",
         "php-di/php-di": "^7.1",
-        "illuminate/collections": "^13.11"
+        "illuminate/collections": "^13.11",
+        "slim/flash": "^0.4.0"
     }
 }
