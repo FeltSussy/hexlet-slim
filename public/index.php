@@ -27,6 +27,8 @@ $app->get('/users/new', function ($request, $response) use ($router) {
     return $this->get('renderer')->render($response, 'users/form.phtml', $params);
 })->setName('users.new');
 
+$users = ['pavel'];
+
 $app->post('/users', function($request, $response) use ($router) {
     $redirectUrl = $router->urlFor('users.index');
     $usersPostUrl = $router->urlFor('users.store');
